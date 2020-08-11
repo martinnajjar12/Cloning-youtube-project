@@ -3,13 +3,58 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/*----------- HEADER -------------*/
 header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  
+  width: 80%;
+  margin: 0 auto;
 }
-#youtube-logo{
+
+#left-div {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+#youtube-logo {
   width: 100px;
-  display: inline-block;
+}
+
+.fas {
+  margin: 10px;
+  color: rgb(122, 122, 122);
+}
+
+#middle-div {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
+
+#middle-div > input {
+  width: 80%;
+  height: 27px;
+  border: 1px black solid;
+  border-right: none;
+}
+
+#middle-div > button {
+  height: 27px;
+  width: 50px;
+}
+
+#middle-div > button .fas {
+  margin: 0;
+}
+
+#right-div > input {
+  background-color: rgb(22, 122, 198);
+  border: none;
+  border-radius: 2px;
+  color: white;
+  width: 50px;
+  height: 27px;
 }
