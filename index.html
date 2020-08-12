@@ -13,45 +13,55 @@
     <title>Youtube page</title>
   </head>
   <body>
-    <header>
-      <div id="left-div">
-        <i class="fas fa-bars"></i>
-        <img alt="youtube logo" src="youtube-logo.png" id="youtube-logo" />
-      </div>
+    <section class="header">
+      <header>
+        <div id="left-div">
+          <i class="fas fa-bars"></i>
+          <img alt="youtube logo" src="youtube-logo.png" id="youtube-logo" />
+        </div>
 
-      <div id="middle-div">
-        <input type="search" placeholder="Search" />
-        <button><i class="fas fa-search"></i></button>
-      </div>
+        <div id="middle-div">
+          <input type="search" placeholder="Search" />
+          <button><i class="fas fa-search"></i></button>
+        </div>
 
-      <div id="right-div">
-        <i class="fas fa-upload"></i>
-        <input type="button" value="sign in" />
-      </div>
-    </header>
+        <div id="right-div">
+          <i class="fas fa-upload"></i>
+          <input type="button" value="sign in" />
+        </div>
+      </header>
+    </section>
     <main class="grid-container">
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/V74l_zS1x8E"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-      <div class="informations">
+      <section class="video-container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/V74l_zS1x8E"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <section class="informations">
         <h1>Contributing to Open Source Part I: The Easy Way</h1>
         <div class="info">
           <div class="channel-info">
-            <img alt="channel image" src="#" />
+            <img
+              alt="channel image"
+              src="channel-logo.jpg"
+              class="channel-image"
+            />
             <div class="name-subscribe">
-              <h5>The Odin Project</h5>
-              <button>Subscribe</button>
+              <h5 class="channel-name">The Odin Project</h5>
+              <button class="subscribe-button">
+                <i class="fab fa-youtube"></i> Subscribe
+              </button>
             </div>
           </div>
           <p class="views">50,016 views</p>
         </div>
-      </div>
-      <div class="description">
+      </section>
+      <section class="description">
         <h5>Published on Feb 27, 2014</h5>
         <p>
           How do you contribute to open source? In this video, I'll describe the
@@ -64,7 +74,7 @@
           for learning web development with Ruby on Rails. You can find more
           information about that project at http://theodinproject.com.
         </p>
-      </div>
+      </section>
       <aside>
         <!--images
             titles

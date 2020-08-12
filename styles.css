@@ -4,7 +4,17 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgb(241, 241, 241);
+}
+
 /*----------- HEADER -------------*/
+.header {
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+
 header {
   display: flex;
   justify-content: space-around;
@@ -63,7 +73,6 @@ header {
 
 .grid-container {
   padding: 10px 0;
-  background-color: rgb(241, 241, 241);
   margin: 0 auto;
   width: 80%;
   display: grid;
@@ -72,14 +81,61 @@ header {
   grid-auto-columns: auto;
 }
 
-iframe {
+.video-container {
   grid-column: 1/2;
   width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
 .informations {
   grid-column: 1/2;
   background-color: white;
+  padding: 10px;
+}
+
+.informations .info {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.informations .channel-image {
+  width: 48px;
+  margin: 10px;
+}
+
+.informations .info .channel-info {
+  display: flex;
+}
+
+.informations .info .name-subscribe {
+  margin-top: 10px;
+}
+.subscribe-button {
+  margin-top: 5px;
+  background-color: rgb(255, 0, 0);
+  color: white;
+  width: 100px;
+  height: 24px;
+  border: 1px solid black;
+  outline: none;
+  border-radius: 2px;
+}
+
+.informations .views {
+  align-self: flex-end;
+  float: right;
+  margin: 10px;
+  font-size: 20px;
+  color: rgb(102, 102, 102);
 }
 
 .description {
