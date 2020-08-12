@@ -138,10 +138,22 @@ header {
   color: rgb(102, 102, 102);
 }
 
+.social-media-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.social-media-buttons button {
+  background-color: transparent;
+  border: none;
+}
+
 .description {
   grid-column: 1/2;
   background-color: white;
 }
+
 
 aside {
   grid-row: 1/4;
