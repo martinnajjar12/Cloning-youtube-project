@@ -6,6 +6,7 @@
 
 body {
   background-color: rgb(241, 241, 241);
+  font-family: "Noto Sans JP", "Roboto", sans-serif;
 }
 
 /*----------- HEADER -------------*/
@@ -189,4 +190,21 @@ aside {
   grid-row: 1/4;
   grid-column: 2/3;
   background-color: white;
+  padding: 15px;
+}
+
+.recommended-video {
+  display: flex;
+}
+
+.recommended-video img {
+  width: 168px;
+  height: 94px;
+  margin-right: 10px;
+}
+
+.video-description h5 {
+  margin-top: 5px;
+  color: rgb(118, 118, 118);
+  font-size: small;
 }
