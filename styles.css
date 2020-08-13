@@ -268,3 +268,31 @@ aside {
 .checkbox:checked::before {
   left: 20px;
 }
+
+footer {
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px  40px;
+}
+
+#footer-logo {
+  width: 100px;
+}
+.footer-flex-container {
+  display: flex;
+  justify-content:flex-start;
+  align-items:center;
+  padding-bottom: 15px;
+}
+.footer-buttons {
+  margin-left: 20px;
+  padding: 5px;
+}
+
+.footer-icons {
+  margin: 0;
+  padding: 0;
+
+}
+
