@@ -186,6 +186,8 @@ header {
   cursor: pointer;
 }
 
+/*------------- THE RECOMMENDED VIDEOS ------------------*/
+
 aside {
   grid-row: 1/4;
   grid-column: 2/3;
@@ -193,8 +195,25 @@ aside {
   padding: 15px;
 }
 
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+.checkbox-div {
+  display: flex;
+  align-items: center;
+}
+
 .recommended-video {
   display: flex;
+  margin-bottom: 10px;
+}
+
+.next-video {
+  border-bottom: 1px solid rgb(170, 170, 170);
 }
 
 .recommended-video img {
@@ -207,4 +226,45 @@ aside {
   margin-top: 5px;
   color: rgb(118, 118, 118);
   font-size: small;
+}
+
+.video-description p {
+  font-size: small;
+}
+
+/* ----------------- STYLING THE CHECKBOX -----------*/
+
+.checkbox {
+  margin-left: 5px;
+  position: relative;
+  width: 40px;
+  height: 20px;
+  -webkit-appearance: none;
+  background-color: #c6c6c6;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+
+.checkbox:checked {
+  background-color: #03a9f4;
+}
+
+.checkbox::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  transform: scale(1.1);
+  transition: 0.5s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.checkbox:checked::before {
+  left: 20px;
 }
