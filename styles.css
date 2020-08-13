@@ -273,7 +273,7 @@ footer {
   width: 80%;
   margin: 0 auto;
   background-color: white;
-  padding: 20px  40px;
+  padding: 20px 40px;
 }
 
 #footer-logo {
@@ -281,9 +281,10 @@ footer {
 }
 .footer-flex-container {
   display: flex;
-  justify-content:flex-start;
-  align-items:center;
+  justify-content: flex-start;
+  align-items: center;
   padding-bottom: 15px;
+  border-bottom: 1px solid black;
 }
 .footer-buttons {
   margin-left: 20px;
@@ -293,6 +294,21 @@ footer {
 .footer-icons {
   margin: 0;
   padding: 0;
-
 }
 
+.footer-links {
+  max-width: 450px;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+
+.footer-links a {
+  padding: 0 8px;
+  text-decoration: none;
+  color: black;
+  font-size: small;
+}
+
+.bolded {
+  font-weight: bold;
+}
