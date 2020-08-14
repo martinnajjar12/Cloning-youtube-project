@@ -2,7 +2,7 @@
 
 # Cloning-youtube-project
 
-> Trying to clone the youtube page.
+> This is a collaborative project which is about cloning a YouTube page. 
 
 ![screenshot](./screenshot.jpg)
 
@@ -11,8 +11,7 @@ Additional description about the project and its features.
 ## Built With
 
 - HTML5,
-- CSS3,
-- Love ;)
+- CSS3
 
 ## Live Demo
 
@@ -20,22 +19,10 @@ Additional description about the project and its features.
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
+> Any browser that is compatible with HTML5 and CSS3
 
 ## Authors
 
@@ -63,9 +50,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Inspiration:  ![](https://img.shields.io/badge/Microverse-blueviolet) 
 
 ## 📝 License
 
