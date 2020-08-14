@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(241, 241, 241);
+  font-family: "Noto Sans JP", "Roboto", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.fa-times,
+.fa-bars,
+.fa-search,
+.fa-upload,
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+/*----------- HEADER -------------*/
+.header {
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.left-div {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.youtube-logo {
+  width: 100px;
+}
+
+.fas {
+  margin: 10px;
+  color: rgb(122, 122, 122);
+}
+
+.middle-div {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
+
+.middle-div > input {
+  width: 80%;
+  height: 27px;
+  border: 1px black solid;
+  border-right: none;
+}
+
+.middle-div > button {
+  height: 27px;
+  width: 50px;
+}
+
+.middle-div > button .fas {
+  margin: 0;
+}
+
+.right-div > input {
+  background-color: rgb(22, 122, 198);
+  border: none;
+  border-radius: 2px;
+  color: white;
+  width: 50px;
+  height: 27px;
+}
+
+/* ------------------ Choosing Language DIV ----------- */
+
+.choose-language {
+  background-color: #167ac6;
+  padding: 3px;
+}
+
+.first-language-div {
+  color: white;
+}
+
+.first-language-div .fas {
+  color: white;
+}
+
+.icon-p-div {
+  display: flex;
+  align-items: center;
+}
+
+.inside-language-div {
+  padding: 10px 20px;
+  background-color: #fff;
+}
+
+.unclickable {
+  color: rgb(22, 122, 198);
+  cursor: not-allowed;
+}
+
+.inside-language-div a {
+  text-decoration: none;
+}
+
+/*------------ THE MAIN ---------*/
+
+.grid-container {
+  padding: 10px 0;
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1em;
+  grid-auto-columns: auto;
+}
+
+.video-container {
+  grid-column: 1/2;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.informations {
+  grid-column: 1/2;
+  background-color: white;
+  padding: 10px;
+}
+
+.informations .info {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.informations .channel-image {
+  width: 48px;
+  margin: 10px;
+}
+
+.informations .info .channel-info {
+  display: flex;
+}
+
+.informations .info .name-subscribe {
+  margin-top: 10px;
+}
+.subscribe-button {
+  margin-top: 5px;
+  background-color: rgb(255, 0, 0);
+  color: white;
+  width: 100px;
+  height: 24px;
+  border: 1px solid black;
+  outline: none;
+  border-radius: 2px;
+}
+
+.informations .views {
+  align-self: flex-end;
+  float: right;
+  margin: 10px;
+  font-size: 20px;
+  color: rgb(102, 102, 102);
+}
+
+.social-media-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-media-buttons button {
+  background-color: transparent;
+  border: none;
+  color: rgb(122, 122, 122);
+  outline: none;
+}
+
+.social-media-buttons button:hover {
+  cursor: pointer;
+}
+
+.right {
+  border-top: 2px solid #167ac6;
+  padding-top: 5px;
+  margin-right: 5px;
+}
+
+.left {
+  padding-top: 5px;
+}
+
+.description {
+  grid-column: 1/2;
+  background-color: white;
+  padding: 20px;
+  color: rgb(75, 75, 75);
+}
+
+.description h5 {
+  font-size: medium;
+  margin-bottom: 10px;
+}
+
+.description p {
+  border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.description button {
+  border: none;
+  background: transparent;
+  padding: 10px;
+  width: 100%;
+  margin: 0 auto;
+  color: rgb(122, 122, 122);
+}
+
+.description button:hover {
+  cursor: pointer;
+}
+
+/*------------- THE RECOMMENDED VIDEOS ------------------*/
+
+aside {
+  grid-row: 1/4;
+  grid-column: 2/3;
+  background-color: white;
+  padding: 15px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkbox-div {
+  display: flex;
+  align-items: center;
+}
+
+.recommended-video {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.next-video {
+  border-bottom: 1px solid rgb(170, 170, 170);
+  margin-top: 15px;
+}
+
+.recommended-video img {
+  width: 168px;
+  height: 94px;
+  margin-right: 10px;
+}
+
+.video-description h5 {
+  margin-top: 5px;
+  color: rgb(118, 118, 118);
+  font-size: small;
+}
+
+.video-description p {
+  font-size: small;
+}
+
+/* ----------------- STYLING THE CHECKBOX -----------*/
+
+.checkbox {
+  margin-left: 5px;
+  position: relative;
+  width: 40px;
+  height: 20px;
+  -webkit-appearance: none;
+  background-color: #c6c6c6;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+
+.checkbox:checked {
+  background-color: #03a9f4;
+}
+
+.checkbox::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  transform: scale(1.1);
+  transition: 0.5s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.checkbox:checked::before {
+  left: 20px;
+}
+
+footer {
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px 40px;
+  margin-bottom: 100px;
+}
+
+.footer-logo {
+  width: 100px;
+}
+.footer-flex-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid black;
+}
+.footer-buttons {
+  margin-left: 20px;
+  padding: 5px;
+}
+
+.footer-icons {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links {
+  max-width: 450px;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+
+.footer-links a {
+  padding: 0 8px;
+  text-decoration: none;
+  color: black;
+  font-size: small;
+}
+
+.bolded {
+  font-weight: bold;
+}

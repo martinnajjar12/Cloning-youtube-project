@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Youtube page</title>
+  </head>
+  <body>
+    <div class="header">
+      <header>
+        <div class="left-div">
+          <i class="fas fa-bars"></i>
+          <img alt="youtube logo" src="youtube-logo.png" class="youtube-logo" />
+        </div>
+
+        <div class="middle-div">
+          <input type="search" placeholder="Search" />
+          <button><i class="fas fa-search"></i></button>
+        </div>
+
+        <div class="right-div">
+          <i class="fas fa-upload"></i>
+          <input type="button" value="sign in" />
+        </div>
+      </header>
+    </div>
+
+    <div class="choose-language">
+      <div class="flex-container first-language-div">
+        <div class="icon-p-div">
+          <i class="fas fa-user"></i>
+          <p class="bolded">Choose your language</p>
+        </div>
+        <div>
+          <i class="fas fa-times"></i>
+        </div>
+      </div>
+      <div class="flex-container inside-language-div">
+        <div>
+          <p>
+            You're viewing YouTube in <span class="bolded">English (US)</span>.
+            You can
+            <span class="unclickable">change this preference below.</span>
+          </p>
+        </div>
+        <div><a href="#">Learn More</a></div>
+      </div>
+    </div>
+
+    <main class="grid-container">
+      <div class="video-container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/V74l_zS1x8E"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <section class="informations">
+        <h1>Contributing to Open Source Part I: The Easy Way</h1>
+        <div class="info">
+          <div class="channel-info">
+            <img
+              alt="channel image"
+              src="channel-logo.jpg"
+              class="channel-image"
+            />
+            <div class="name-subscribe">
+              <h5 class="channel-name">The Odin Project</h5>
+              <button class="subscribe-button">
+                <i class="fab fa-youtube"></i> Subscribe
+              </button>
+            </div>
+          </div>
+          <p class="views">50,016 views</p>
+        </div>
+        <div class="social-media-buttons">
+          <div class="left">
+            <button><i class="fas fa-plus"></i> Add to</button>
+            <button><i class="fas fa-share"></i> Share</button>
+            <button><i class="fas fa-ellipsis-h"></i> more</button>
+          </div>
+          <div class="right">
+            <button><i class="fas fa-thumbs-up"></i>198255</button>
+            <button><i class="fas fa-thumbs-down"></i>1025</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="description">
+        <h5>Published on Feb 27, 2014</h5>
+        <p>
+          How do you contribute to open source? In this video, I'll describe the
+          easiest way to make a simple contribution to an open source project --
+          without using the command line, a text editor, "forking a repo", or
+          even touching Git outside of Github. I'll also describe what kinds of
+          contributions open source software projects are typically looking for.
+          As an example, I use submitting a student solution to a web
+          development exercise from The Odin Project, a free online curriculum
+          for learning web development with Ruby on Rails. You can find more
+          information about that project at http://theodinproject.com.
+        </p>
+        <button class="show-more">Show more</button>
+      </section>
+
+      <aside>
+        <div class="flex-container">
+          <div class="upnext-div">
+            <h4>Up next</h4>
+          </div>
+          <div class="checkbox-div">
+            <label for="checkbox">Autoplay</label>
+            <i class="fas fa-exclamation-circle"></i>
+            <input class="checkbox" type="checkbox" id="checkbox" checked />
+          </div>
+        </div>
+        <div class="recommended-video next-video">
+          <div class="video-thumbnail">
+            <img
+              class="thumbnail"
+              alt="youtube-thumbnail"
+              src="thumbnails-img/1.jpg"
+            />
+          </div>
+          <div class="video-description">
+            <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+            <h5>Lorem, ipsum.</h5>
+            <p>253,215 views</p>
+          </div>
+        </div>
+
+        <div class="recommended-video">
+          <div class="video-thumbnail">
+            <img
+              class="thumbnail"
+              alt="youtube-thumbnail"
+              src="thumbnails-img/2.jpg"
+            />
+          </div>
+          <div class="video-description">
+            <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+            <h5>Lorem, ipsum.</h5>
+            <p>253,215 views</p>
+          </div>
+        </div>
+
+        <div class="recommended-video">
+          <div class="video-thumbnail">
+            <img
+              class="thumbnail"
+              alt="youtube-thumbnail"
+              src="thumbnails-img/3.jpg"
+            />
+          </div>
+          <div class="video-description">
+            <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+            <h5>Lorem, ipsum.</h5>
+            <p>253,215 views</p>
+          </div>
+        </div>
+
+        <div class="recommended-video">
+          <div class="video-thumbnail">
+            <img
+              class="thumbnail"
+              alt="youtube-thumbnail"
+              src="thumbnails-img/4.jpg"
+            />
+          </div>
+          <div class="video-description">
+            <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+            <h5>Lorem, ipsum.</h5>
+            <p>253,215 views</p>
+          </div>
+        </div>
+
+        <div class="recommended-video">
+          <div class="video-thumbnail">
+            <img
+              class="thumbnail"
+              alt="youtube-thumbnail"
+              src="thumbnails-img/5.jpg"
+            />
+          </div>
+          <div class="video-description">
+            <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+            <h5>Lorem, ipsum.</h5>
+            <p>253,215 views</p>
+          </div>
+        </div>
+
+        <div class="recommended-video">
+          <div class="video-thumbnail">
+            <img
+              class="thumbnail"
+              alt="youtube-thumbnail"
+              src="thumbnails-img/6.jpg"
+            />
+          </div>
+          <div class="video-description">
+            <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+            <h5>Lorem, ipsum.</h5>
+            <p>253,215 views</p>
+          </div>
+        </div>
+
+        <div class="recommended-video">
+          <div class="video-thumbnail">
+            <img
+              class="thumbnail"
+              alt="youtube-thumbnail"
+              src="thumbnails-img/7.jpg"
+            />
+          </div>
+          <div class="video-description">
+            <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+            <h5>Lorem, ipsum.</h5>
+            <p>253,215 views</p>
+          </div>
+        </div>
+
+        <div class="recommended-video">
+          <div class="video-thumbnail">
+            <img
+              class="thumbnail"
+              alt="youtube-thumbnail"
+              src="thumbnails-img/8.jpg"
+            />
+          </div>
+          <div class="video-description">
+            <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+            <h5>Lorem, ipsum.</h5>
+            <p>253,215 views</p>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <div class="footer-flex-container">
+        <img alt="youtube logo" src="youtube-logo.png" class="footer-logo" />
+        <button class="footer-buttons">
+          <i class="fas fa-users-cog footer-icons"></i> Language: English
+          <i class="fas fa-sort-down footer-icons"></i>
+        </button>
+        <button class="footer-buttons">
+          Locations: Netherlands <i class="fas fa-sort-down footer-icons"></i>
+        </button>
+        <button class="footer-buttons">
+          Restericated Mode: Off <i class="fas fa-sort-down footer-icons"></i>
+        </button>
+        <button class="footer-buttons">
+          <i class="fas fa-hourglass-end footer-icons"></i> History
+        </button>
+        <button class="footer-buttons">
+          <i class="fas fa-question-circle footer-icons"></i> Help
+        </button>
+      </div>
+      <div class="footer-links">
+        <a href="#" class="bolded">About</a>
+        <a href="#" class="bolded">Press</a>
+        <a href="#" class="bolded">Copyright</a>
+        <a href="#" class="bolded">Creators</a>
+        <a href="#" class="bolded">Advertise</a>
+        <a href="#" class="bolded">Developers</a>
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Policy & Safety</a>
+        <a href="#">Test new features</a>
+      </div>
+    </footer>
+  </body>
+</html>
