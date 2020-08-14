@@ -2,9 +2,9 @@
 
 # Cloning-youtube-project
 
-> This is a collaborative project which is about cloning a YouTube page. 
+> This is a collaborative project which is about cloning a YouTube page.
 
-![screenshot](./screenshot.jpg)
+![screenshot](./app_screenshot.jpg)
 
 Additional description about the project and its features.
 
@@ -22,6 +22,7 @@ Additional description about the project and its features.
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+
 > Any browser that is compatible with HTML5 and CSS3
 
 ## Authors
@@ -50,7 +51,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Inspiration:  ![](https://img.shields.io/badge/Microverse-blueviolet) 
+- Inspiration: ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 ## 📝 License
 
