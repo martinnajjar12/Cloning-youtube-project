@@ -9,6 +9,18 @@ body {
   font-family: "Noto Sans JP", "Roboto", sans-serif;
 }
 
+button {
+  cursor: pointer;
+}
+
+.fa-times,
+.fa-bars,
+.fa-search,
+.fa-upload,
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
 /*----------- HEADER -------------*/
 .header {
   width: 100%;
@@ -68,6 +80,40 @@ header {
   color: white;
   width: 50px;
   height: 27px;
+}
+
+/* ------------------ Choosing Language DIV ----------- */
+
+.choose-language {
+  background-color: #167ac6;
+  padding: 3px;
+}
+
+.first-language-div {
+  color: white;
+}
+
+.first-language-div .fas {
+  color: white;
+}
+
+.icon-p-div {
+  display: flex;
+  align-items: center;
+}
+
+.inside-language-div {
+  padding: 10px 20px;
+  background-color: #fff;
+}
+
+.unclickable {
+  color: rgb(22, 122, 198);
+  cursor: not-allowed;
+}
+
+.inside-language-div a {
+  text-decoration: none;
 }
 
 /*------------ THE MAIN ---------*/
@@ -142,7 +188,6 @@ header {
 .social-media-buttons {
   display: flex;
   justify-content: space-between;
-  margin-top: 5px;
 }
 
 .social-media-buttons button {
@@ -156,12 +201,21 @@ header {
   cursor: pointer;
 }
 
+.right {
+  border-top: 2px solid #167ac6;
+  padding-top: 5px;
+  margin-right: 5px;
+}
+
+.left {
+  padding-top: 5px;
+}
+
 .description {
   grid-column: 1/2;
   background-color: white;
   padding: 20px;
   color: rgb(75, 75, 75);
-  margin-bottom: 100px;
 }
 
 .description h5 {
@@ -199,7 +253,6 @@ aside {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 15px;
 }
 
 .checkbox-div {
@@ -214,6 +267,7 @@ aside {
 
 .next-video {
   border-bottom: 1px solid rgb(170, 170, 170);
+  margin-top: 15px;
 }
 
 .recommended-video img {
