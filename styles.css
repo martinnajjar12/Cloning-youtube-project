@@ -20,17 +20,17 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
-#left-div {
+.left-div {
   display: flex;
   align-items: center;
   padding: 10px;
 }
 
-#youtube-logo {
+.youtube-logo {
   width: 100px;
 }
 
@@ -39,29 +39,29 @@ header {
   color: rgb(122, 122, 122);
 }
 
-#middle-div {
+.middle-div {
   display: flex;
   justify-content: center;
   width: 70%;
 }
 
-#middle-div > input {
+.middle-div > input {
   width: 80%;
   height: 27px;
   border: 1px black solid;
   border-right: none;
 }
 
-#middle-div > button {
+.middle-div > button {
   height: 27px;
   width: 50px;
 }
 
-#middle-div > button .fas {
+.middle-div > button .fas {
   margin: 0;
 }
 
-#right-div > input {
+.right-div > input {
   background-color: rgb(22, 122, 198);
   border: none;
   border-radius: 2px;
@@ -75,7 +75,7 @@ header {
 .grid-container {
   padding: 10px 0;
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 1em;
@@ -270,13 +270,14 @@ aside {
 }
 
 footer {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   background-color: white;
   padding: 20px 40px;
+  margin-bottom: 100px;
 }
 
-#footer-logo {
+.footer-logo {
   width: 100px;
 }
 .footer-flex-container {
